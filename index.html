@@ -5,9 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Minecraft Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans:wght@100;400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Sans&display=swap" rel="stylesheet">
     <style>
-        body {
-            font-family: Arial, sans-serif;
+      @font-face {
+        font-family: Helvetica;
+        src: url();
+      }
+        body {   
             margin: 0;
             padding: 0;
         }
@@ -15,7 +24,7 @@
         header {
             background-color: #000;
 
-            padding: 10px 0;
+            padding: 15px 0;
             height: 2px;
             
             
@@ -24,6 +33,43 @@
         nav {
             background-color: #171615;
             overflow: hidden;
+            padding: 15px;
+            font-family: 'Noto Sans';
+            font-weight: 700;
+            font-size: small;
+            letter-spacing: 0.08em;
+            position: relative;
+        }
+
+        nav button{
+          position: absolute;
+          top: 20px;
+          left: 85%;
+          font-size: large;
+          width: 210px;
+          background-color: #3c8527;
+          color: white;
+          padding: 10px;
+          text-shadow: 0px 2px #2a641c;
+          box-shadow : inset 0 4px #52a535 ,inset 0 -4px #2a641c ,0 4px #00000040;
+          font-family: 'Noto Sans';
+          font-weight: 800;
+          letter-spacing: 1px;
+        }
+        .down{
+          position: absolute;
+          top: 28px;
+          left: 90px;
+        }
+        .navlink{
+          position: absolute;
+          top: 28px;
+          left: 310px;
+        }
+        .navlink2{
+          position: absolute;
+          top: 28px;
+          left: 415px;
         }
 
         nav a {
@@ -36,8 +82,8 @@
         }
 
         nav a:hover {
-            background-color: #ddd;
-            color: black;
+            
+            color: #a0e081;
         }
 
         main {
@@ -55,7 +101,7 @@
         }
 
         svg{
-            width: 200px;
+            width: 250px;
             height: 50px;
             margin-left: 12%;
         }
@@ -65,19 +111,47 @@
             margin-top: -4px;
             margin-left: 21px;
             color: #a0e081;
-            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-family: Arial, sans-serif;
+            position: relative;
             
 
 
+        }
+        .texthead22{
+          position: absolute;
+          top: -10px;
+          left: 95%;
+        }
+
+        .texthead22 h4{
+            font-size: small;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .texthead2{
+          position: absolute;
+          top: -10px;
+          left: 90%;
+          display: inline;
+
+        }
+        .texthead2 h4{
+            font-size: small;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+
+        .texthead2 a:hover{
+          color: white;
+        }
+        .texthead22 a:hover{
+          color: white;
         }
         h4{
             display: flex;
             font-size: 20px;
             color: #4CAF50;
-        }
-        .texthead{
-            display: flex;
-
         }
         .mainpic{
             margin-top: 0%;
@@ -117,11 +191,11 @@
            margin-bottom: 0px;
         }
         .maintextsub{
+            font-family: "Noto Sans";
             margin-top: 0px;
             margin-right: 99px;
             text-align: left;
-            line-height: 25px;
-            
+            line-height: 26px;
         }
         .maintext{
             margin-top: 8px;
@@ -129,7 +203,7 @@
         
         .main2{
             width: 100%; 
-             height: 1400px; 
+             height: 870px; 
             background-image: url('./bg-wool-dark.png');
             background-repeat: repeat; 
             position: relative; 
@@ -145,10 +219,12 @@
             padding-top: 20px;
         }
 
-        .main2text{
+        .main2text h2{
+          font-weight: 700px;
+          font-size: 28px;
             margin-top: 80px;
-            margin-left: 200px;
             text-align: center;
+            letter-spacing: 1px;
             
         }
 
@@ -178,11 +254,17 @@
            margin-top: 10px; 
           padding: 0 10px; 
         }
+        .game-container h3{
+          font-family: 'Noto Sans';
+          text-transform: uppercase;
+          color: #196D17;
+        }
         .pp{
             font-size: 14px;
             font-family: 'Noto Sans';
             line-height: 20px;
             font-weight: 400;
+            color: #181818;
     
           }
         
@@ -191,18 +273,17 @@
             font-weight: 700;
             font-size: 28px;
            line-height: 34px;
-            padding-top: initial;
-            
-             letter-spacing: 1px;
-             margin-top: 80px;
-             box-sizing: border-box;
-             display: block;
-             text-align: center!important;
-               color: white;
+           letter-spacing: 1px;
+          text-align: center!important;
+          color: white;
+          margin-top: 0px;
           }
 
           .main3 {
-    text-align: center;
+           text-align: center;
+            background-image: url('./bg-wool-dark.png');
+            background-repeat: repeat; 
+            height: 400px;
 }
 
 .new-game-container {
@@ -213,7 +294,7 @@
 }
 
 .new-game-container img {
-    width: 500px; 
+    width: 300px; 
     height: auto; 
     border: 2px solid white;
     
@@ -226,7 +307,28 @@
     border: 2px solid white;
 }
 
+.new-game-container.larger-image a{
+    color: white;
+    text-decoration: none;
+}
+
+.new-game-container a{
+  color: white;
+    text-decoration: none;
+}
+
+.new-game-container.larger-image a:hover{
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.new-game-container a:hover{
+    color: #4CAF50;
+    text-decoration: none;
+}
+
 .main3sub3text {
+  font-family: "Noto Sans";
     font-size: 18px; 
     margin: 15px 0; 
     text-transform: uppercase;
@@ -249,7 +351,7 @@
 }
   .main4sub1{
     max-width: 1200px;
-    margin-top: 10px;
+   
     padding-top: 100px;
     margin-left: 90px;
   }
@@ -257,7 +359,7 @@
   .main43sub1{
     max-width: 1200px;
     margin-top: 10px;
-    padding-top: 100px;
+    padding-top: 150px;
     margin-left: 90px;
   }
 
@@ -290,19 +392,43 @@
   }
 
   .main42{
-    margin-top: 90px;
+    padding-top: 50px;
     max-width: 1200px;
+    margin: auto;
 
+
+
+  }
+
+  .main42 p{
+    font-family: 'Noto Sans';
+  }
+  .main42img {
+   margin-left: 30px;
+   margin-top: 20px;
   }
   .main42img img{
     float: left;
     height: 270px;
-    margin-left: 200px;
-    padding-right: 100px;
   }
-  .main42textsub{
-    height: 270px;
+
+  .main4textsub p{
+    font-family: 'Noto Sans';
+  }
+
+  .main42textsub {
+    margin: auto;
+    max-width: 1200px;
     text-align: left;
+    padding-left: 600px;
+    padding-top: 30px;
+    
+  }
+  .main42textsub h2{
+    font-family: 'Noto Sans';
+    text-align: left;
+    font-weight: 700;
+    line-height: 34px;
     
   }
 
@@ -381,6 +507,7 @@
 
   .loader{
     padding-top: 50px;
+    padding-bottom: 20px;
     max-width: fit-content;
     margin: auto;
   }
@@ -424,13 +551,16 @@
   .lists1 h5{
     color: white;
     margin-bottom: 0px;
+    font-family: 'Noto Sans';
   }
   .lists1 ul{
     list-style: none;
     padding-left: 0px;
     line-height: 20px;
-    color: #4CAF50;
+    color: #a0e080;
     font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
   }
 
   .lists2{
@@ -441,13 +571,16 @@
   .lists2 h5{
     color: white;
     margin-bottom: 0px;
+    font-family: 'Noto Sans';
   }
   .lists2 ul{
     list-style-type: none;
     padding-left: 0px;
     line-height: 20px;
     font-size: small;
-    color: #4CAF50;
+    color: #a0e080;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
   }
 
   .main6svg{
@@ -457,23 +590,71 @@
     top: 70px;
     left: 1150px;
   }
+
+  .loader button{
+     color: white;
+     font-size: medium;
+     font-weight: 700;
+     background-color: #3b8526;
+     height: 50px;
+     width: 150px;
+     box-shadow: inset 0 4px #6bc349, inset 0 -4px #2a631c, 0 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .loader button:hover{
+    background-color: rgb(31, 31, 31);
+    border-color: blue;
+    border-radius: 2px;
+    box-decoration-break: unset;
+    box-shadow: inset 0 0 rgb(31, 31, 31), inset 0 0 rgb(31, 31, 31), 0 0 rgb(31, 31, 31);
+  }
+
+  .outmain button{
+    position: absolute;
+    top: 270px;
+    left: 50px;
+  }
+
+  .mainbutton{
+    color: white;
+     font-size: large;
+     font-weight: 700;
+     background-color: #3b8526;
+     height: 70px;
+     width: 250px;
+     box-shadow: inset 0 4px #6bc349, 0 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .outmain button:hover{
+    background-color: rgb(31, 31, 31);
+    border-color: blue;
+    border-radius: 2px;
+    box-decoration-break: unset;
+    box-shadow: inset 0 0 rgb(31, 31, 31), inset 0 0 rgb(31, 31, 31), 0 0 rgb(31, 31, 31);
+  }
     </style>
 </head>
 
 <body>
 
     <header>
-        <h1 class="texthead"><a class="The" href="https://www.minecraft.net/en-us/live"  style="color: #4CAF50;">Watch Minecraft Live replay for the biggest news!</a></h1>
-        <div class="texthead2"><h4><a href="https://www.minecraft.net/en-us/login">Log IN</a> <span><a href="https://www.minecraft.net/en-us/redeem"> REDEEM</a></span></h4>
-        <h4></h4></div> 
+        <h1 class="texthead"><a class="The" href="https://www.minecraft.net/en-us/live"  style="color: #a0e080; text-decoration: none;">Watch Minecraft Live replay for the biggest news!</a></h1>
+        <div class="texthead2"><h4><a href="https://www.minecraft.net/en-us/login" style="color: #a0e080; font-family: 'Noto Sans'; text-decoration: none;">Log IN</a></h4> 
+        </div> 
+        <div class="texthead22"><h4><a href="https://www.minecraft.net/en-us/redeem" style="color: #a0e080; font-family: 'Noto Sans'; text-decoration: none;"> REDEEM</a></h4></div>
     </header>
     
 
     <nav>
+      <button>GET MINECRAFT</button>
         <a href="#">GAMES</a>
+        <div class="down"><img src="./down-arrow.png"></div>
         <a href="#">COMMUNITY</a>
+        
         <a href="#">MERCH</a>
+        <div class="navlink"><img src="./nav-link-icon.svg"></div>
         <a href="#">SUPPORT</a>
+        <div class="navlink2"><img src="./nav-link-icon.svg"></div>
        
         <svg class="mc-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1639.373 280.629"><defs><style>.a{fill:#3d3938;}.b{fill:#d0c5c0;}</style></defs><path d="M1607.741,101.632l29.553-49.007L1620.9,0H494.142l-5.274,38.4L478.426,0H215.833l-9.044,36.157h-21.83l-5.177,20L150.794,0H65.22L0,209.344l51.97,71.284h85.465l10.456-39.55h34.518l23.147,39.55H469.362l6.283-45.87,14.6,45.87h881.366l35.68-73.944h32.267l29.97-58.654,32,132.6h88.725l49.119-71.4ZM846.208,151.295l.109-24.988h75.807l.768,24.988Z"/><polygon class="a" points="59.37 266.076 16.071 206.686 85.96 206.686 125.597 266.077 59.37 266.076"/><polygon class="a" points="342.207 206.686 272.321 206.686 302.204 266.077 368.431 266.077 342.207 206.686"/><polygon class="a" points="365.503 206.686 390.507 266.077 456.735 266.077 435.389 206.686 365.503 206.686"/><polygon class="a" points="575.162 206.686 589.189 266.077 743.72 266.077 738.23 206.686 575.162 206.686"/><polygon class="a" points="924.595 206.686 920.327 266.077 765.796 266.077 761.525 206.686 924.595 206.686"/><polygon class="a" points="947.89 206.686 1017.774 206.686 1008.63 266.077 942.403 266.077 947.89 206.686"/><polygon class="a" points="1041.071 206.686 1030.706 266.077 1096.933 266.077 1110.957 206.686 1041.071 206.686"/><polygon class="a" points="1134.252 206.686 1119.009 266.076 1185.237 266.077 1204.139 206.686 1134.252 206.686"/><polygon class="a" points="1227.434 206.686 1207.312 266.077 1273.54 266.077 1297.32 206.686 1227.434 206.686"/><polygon class="a" points="1320.615 206.686 1295.616 266.077 1361.843 266.077 1390.503 206.686 1320.615 206.686"/><polygon class="a" points="1553.57 206.686 1516.374 266.077 1582.601 266.077 1623.457 206.686 1553.57 206.686"/><polygon class="a" points="481.98 206.686 500.886 266.077 567.114 266.077 551.866 206.686 481.98 206.686"/><polygon class="a" points="179.141 206.686 249.029 206.686 280.128 266.077 213.9 266.077 179.141 206.686"/><path class="b" d="M199.243,126.307h-22.59l-10.237,39.54H120.542l10.93-39.54h-22.59L85.957,206.685H16.071L75.928,14.553h64.828L130.444,50.71H152.37L142.077,87.945h44.507l9.64-37.235H218.15l9.044-36.157h64.831l-43,192.132H179.141Z"/><path class="b" d="M313.631,14.553h64.828L342.207,206.685H272.321Z"/><path class="b" d="M594.552,14.553H745.818L744.39,50.71H656.683l-2.777,37.235h89.013L741.4,126.307h-90.36l-2.95,39.54h91.749l-1.613,40.838H575.161Z"/><path class="b" d="M767.427,14.553H918.692L919.8,50.71H832.1l-.5,115.137h91.747l1.254,40.838H761.525Z"/><path class="b" d="M1035.075,126.307h-22.591l5.29,80.378H947.89L940.3,14.552h151.265l7.407,73.392H1076.72l1.755,19.037h22.42l10.062,99.7h-69.886Zm-27.566-75.6,2.45,37.235h22.255l-2.778-37.235Z"/><path class="b" d="M1286.051,14.553h151.265l8.726,36.157h-87.707l7.679,37.235h89.014l9.258,38.362h-90.36l16.577,80.378h-69.888Z"/><path class="b" d="M1511.822,50.71h-43.853l-9.044-36.157H1610.19l11.265,36.157H1577.6l45.856,155.975h-69.887Z"/><path class="b" d="M490.245,145.926H467.482l5.64-38.944H450.7l-15.312,99.7H365.5L400.068,14.553H464.9L459.343,50.71H481.27l-5.392,37.235h22.254l9.983-73.392h64.828L551.866,206.685H481.98Z"/><path class="b" d="M1264.441,14.553H1113.176l21.077,192.132h69.886l-8.265-60.759h22.763l8.8,60.759h69.886ZM1213.49,84.8H1224.6l5.278,35.033h-15.022L1213,106.982h-22.42l1.747,12.851H1177.3l-4.56-35.033h11.113l-1.263-9.389h-25.834l-3.072-24.7h29.236l2.937,21.587h22.116l-3.126-21.587h29.235l3.866,24.7h-25.834Z"/></svg>
     </nav>
@@ -488,46 +669,65 @@
                     <p class="maintext">With new games, new updates, and new ways to play, join one <br> of the biggest communities in gaming and start crafting today!</p>
                 </div>
                 </div>
+
+                <a href="https://www.minecraft.net/en-us/store/minecraft-deluxe-collection-pc"><button class="mainbutton">GET MINECRAFT</button></a>
             </div>
         </div>
 
         <div class="main2">
-            <div class="main2sub">
-                <div class="main2text">
-                    <h2>EXPLORE MINECRAFT GAMES & ADD ONS</h2></div>
-                    <div class="main2sub2">
-                        <div class="game-container">
-                        <img class="main2sub2p1" src="./Games_Subnav_Minecraft-300x465.jpg" height="350px"><div>
-                            <h3>MINECRAFT</h3>
-                            <p class="pp">Explore your own unique world, survive the night, and create anything you can imagine!</p></div>
-                        </div>
-                        <div class="game-container"><img class="main2sub2p1" src="./games_subnav_dungeona-300x465.jpg" height="350px"><div><h3>Minecraft dungeons</h3><p class="pp">Discover an action-adventure game inspired by classic dungeons crawlers.</p></div></div>
-                        <div class="game-container"><img class="main2sub2p1" src="./games_subnav_dungeona-300x465 (1).jpg" height="350px"><dv><h3>Minecraft Legends</h3><p class="pp">Uncover the mysteries of Minecraft Legends, a new action strategy game.</p></dv></div>
-
-                    </div>
+          <div class="main2sub">
+              <div class="main2text">
+                  <h2>EXPLORE MINECRAFT GAMES & ADD ONS</h2>
+              </div>
+              <div class="main2sub2">
+                  <div class="game-container">
+                      <img class="main2sub2p1" src="./Games_Subnav_Minecraft-300x465.jpg" height="350px">
+                      <div>
+                          <h3><a href="https://www.minecraft.net/en-us/about-minecraft-pmp" style="color: #196D17; text-decoration: none;">MINECRAFT</a></h3>
+                          <p class="pp">Explore your own unique world, <br>survive the night, and create<br> anything you can imagine!</p>
+                      </div>
+                  </div>
+                  <div class="game-container">
+                      <img class="main2sub2p1" src="./games_subnav_dungeona-300x465.jpg" height="350px">
+                      <div>
+                          <h3><a href="https://www.minecraft.net/en-us/about-dungeons" style="color: #196D17; text-decoration: none;">Minecraft <br>dungeons</a></h3>
+                          <p class="pp">Discover an action-adventure<br> game inspired by classic <br> dungeons crawlers.</p>
+                      </div>
+                  </div>
+                  <div class="game-container">
+                      <img class="main2sub2p1" src="./games_subnav_dungeona-300x465 (1).jpg" height="350px">
+                      <div>
+                          <h3><a href="https://www.minecraft.net/en-us/about-legends" style="color: #196D17; text-decoration: none;">Minecraft Legends</a></h3>
+                          <p class="pp">Uncover the mysteries of <br>Minecraft Legends, a new action <br>strategy game.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
 
 
                 
 
-            </div>
+           
             <div class="main3">
                 <h2 class="main3text">NEWEST NEWS</h2>
                 <div class="new-game-container">
                     <img src="./LetsBreakMCLegendscarousel.avif">
                     <div>
-                        <h3 class="main3sub3text">Let's Break Minecraft <br> Legends</h3>
+                        <h3 class="main3sub3text"><a href="https://www.minecraft.net/en-us/article/let-s-break-minecraft-legends">Let's Break Minecraft <br> Legends</a></h3>
                     </div>
                 </div>
                 <div class="new-game-container larger-image">
                     <img src="./Recap_Carousel_440x250.jpg">
                     <div>
-                        <h3 class="main3sub3text">Minecraft Live 2023: The <br>Recap</h3>
+                        <h3 class="main3sub3text"><a href="https://www.minecraft.net/en-us/article/minecraft-live-2023--the-recap-">Minecraft Live 2023: The <br>Recap</a></h3>
                     </div>
                 </div>
                 <div class="new-game-container">
                     <img src="./nautilusshell-car.avif">
                     <div>
-                        <h3 class="main3sub3text">Taking Inventory: <br>Nautilus Shell</h3>
+                        <h3 class="main3sub3text"><a href="https://www.minecraft.net/en-us/article/nautilus-shell">Taking Inventory: <br>Nautilus Shell</a></h3>
                     </div>
                 </div>
             </div>
@@ -537,7 +737,7 @@
                     <img src="./main4i1.avif">
                     <div class="main4text">
                         <div class="main4textsub">
-                            <h2>MISSED MINECRAFT LIVE?</h2><p>From new updates to the mob vote, see all the highlights you missed!</p><span>WATCH THE REPLAY</span>
+                            <h2>MISSED MINECRAFT LIVE?</h2><p>From new updates to the mob vote, see all the highlights you missed!</p><span><a href="https://www.minecraft.net/en-us/live" style="font-family: 'Noto Sans'; color: #196d17; text-decoration: none; font-weight: 700;">WATCH THE REPLAY</a></span>
                         </div>
                     </div>
                 </div>
@@ -547,8 +747,8 @@
                     <div class="main42text">
                         <div class="main42textsub">
                             <h2>LATEST NEWS!</h2>
-                            <p>Stay in the loop and never miss an update with Minecraft.net’s all-new news page – a hub packed with the latest game updates, guides, and more!</p>
-                            <span> CHECK IT OUT</span>
+                            <p>Stay in the loop and never miss an update with Minecraft.net’s <br>all-new news page – a hub packed with the latest game <br> updates, guides, and more!</p>
+                            <span><a href="https://www.minecraft.net/en-us/articles" style="font-family: 'Noto Sans'; color: #196d17; text-decoration: none; font-weight: 700;">CHECK IT OUT</a> </span>
                         </div>
                     </div>
                 </div>
@@ -557,7 +757,7 @@
                     <img src="./main4i3.avif">
                     <div class="main43text">
                         <div class="main43textsub">
-                            <h2>EXPAND YOUR MINECRAFT <br> KNOWLEDGE!</h2><p>How do you create an account, or survive a night in the <br>Overworld? Level up your skills with a brand-new library of resources and guides!</p><span>GET STARTED</span>
+                            <h2>EXPAND YOUR MINECRAFT <br> KNOWLEDGE!</h2><p style="font-family: 'Noto Sans';">How do you create an account, or survive a night in the <br>Overworld? Level up your skills with a brand-new library of resources and guides!</p><span><a href="https://www.minecraft.net/en-us/minecraft-tips-for-beginners" style="font-family: 'Noto Sans'; color: #196d17; text-decoration: none; font-weight: 700;">GET STARTED</a></span>
                         </div>
                     </div>
                 </div>
@@ -568,8 +768,8 @@
             <div class="main5">
                 <div class="main5h1">
                 <div class="main5h"> <h2>COMMUNITY CREATIONS</h2></div>
-                <div class="main5hsub"><p>Discover the best add-ons, mods, and more being built by the incredible <br>Minecraft community!</p></div>
-                <div class="main5hsubspan"><span>EXPLORE</span></div>       
+                <div class="main5hsub"><p style="font-family: 'Noto Sans';">Discover the best add-ons, mods, and more being built by the incredible <br>Minecraft community!</p></div>
+                <div class="main5hsubspan"><span><a href="https://www.minecraft.net/en-us/articles" style="font-family: 'Noto Sans'; color: #196d17; text-decoration: none; font-weight: 700;">EXPLORE</a></span></div>       
         
             </div>
 
@@ -584,15 +784,15 @@
                 <img class="image8" src="./8.avif">
     
             </div>
-
+        
             <div class="loader"> <button> LOAD MORE</button></div>
-            <div class="foot5">Cross-platform play available on Xbox, PlayStation 4, Nintendo Switch, iOS, Android, and Windows. Cross-play requires Microsoft <br> account. Xbox Live Gold required for online multiplayer on Xbox. PlayStation Plus Membership required for online multiplayer on <br> PlayStation 4. Nintendo Switch Online membership required for online multiplayer on Nintendo Switch.</div>
+            <div class="foot5" style="font-style: italic; text-align: center; line-height: 1.5; font-weight: 400; font-family: Arial, Helvetica, sans-serif;">Cross-platform play available on Xbox, PlayStation 4, Nintendo Switch, iOS, Android, and Windows. Cross-play requires Microsoft <br> account. Xbox Live Gold required for online multiplayer on Xbox. PlayStation Plus Membership required for online multiplayer on <br> PlayStation 4. Nintendo Switch Online membership required for online multiplayer on Nintendo Switch.</div>
             
             <div class="main6">
                 <div class="new9-container">
                     <img class="image61"src="./Mojang2020Logo.png">
                     <img class="image62" src="./Logo_ Xbox_Game_Studio.webp">
-                    <div class="main6subtext1"> <p>Mojang ©2009-2023. "Minecraft" is a trademark of Mojang Synergies AB</p></div>
+                    <div class="main6subtext1"> <p style="color: #d1cfce; font-family: Arial, Helvetica, sans-serif;">Mojang ©2009-2023. "Minecraft" is a trademark of Mojang Synergies AB</p></div>
                 </div>
 
                 <div class="lists1">
@@ -635,6 +835,8 @@
 
                 <div class="main6svg"><img src="./esrb_2021.svg"></div>
             </div>
+
+            
 
             
 
